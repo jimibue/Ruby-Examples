@@ -3,6 +3,7 @@ p Object.superclass       #  BasicObject
 p BasicObject.superclass  # "nil"
 
 class Animal
+  attr_accessor :age, :weight
   def initialize(age, weight)
     @age = age
     @weight = weight

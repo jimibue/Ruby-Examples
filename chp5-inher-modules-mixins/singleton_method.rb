@@ -28,7 +28,6 @@ parrot.talk #Polly want a cracker
 #check to see if a singleton method exist
 p parrot.singleton_methods
 if parrot.singleton_methods.include?(:talk)
-then
   puts "yes I have"
   parrot.talk
 else

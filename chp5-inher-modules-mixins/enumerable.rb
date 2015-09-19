@@ -21,4 +21,16 @@ upcased = letters.collect do |letter|
 end
 
 p upcased
+
+module Summable
+  def sum
+    inject(:+)
+  end
+end
+class FindWheelLetters
+  include Summable
+end
+
+p letters.sum
+
 #return to page 78

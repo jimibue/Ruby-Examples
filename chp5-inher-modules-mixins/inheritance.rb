@@ -26,4 +26,3 @@ end
 d = Dog.new(21,100,"grant")
 p d.details # "I am grant and I am age: 21 weight:100"
 
-f

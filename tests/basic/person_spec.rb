@@ -1,4 +1,5 @@
 require 'rspec'
+require_relative 'spec/spec_helper'
 require_relative 'person'
 
 describe 'Testing person class' do

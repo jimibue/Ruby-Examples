@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative 'wa'
+require_relative 'ware'
 
 describe 'My behaviour' do
 

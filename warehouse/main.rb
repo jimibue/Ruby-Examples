@@ -2,7 +2,7 @@ class Main
 end
 ## get each line from file
 
-file = File.open('data.txt','r')
+puts file = File.open('data.txt','r')
 while(line = file.gets)
 
   # process_line(line)

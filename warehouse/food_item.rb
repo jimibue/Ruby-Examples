@@ -21,8 +21,8 @@ class FoodItem
   end
 
   def ==(other)
-    #self.upc == other.upc
-    true
+    self.upc == other.upc
+    #gittrue
   end
 
   def to_s

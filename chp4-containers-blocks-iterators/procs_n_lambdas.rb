@@ -55,8 +55,33 @@ x = [1,2,3,4,5].map(&do_crazy_stuff1)
 p x
 
 
+#DRY
+#method that returns a lambda
+def multiply_by(factor)
+  ->(n){factor*n}
+end
+doubler = multiply_by(2)
+puts doubler.(3) #6
+
+tripler = multiply_by(3)
+puts tripler.(3) #9
+
+#Prediacte -returns a boolean
+#predicates as filters (deafualt is true in the case)
+def get_message(message, filter = ->(str){true})
+  messages = []
+  messages << message if filter.(message)
+  messages
+end
 
 
+x = get_message("hello", ->(str){str.length>4})
+
+puts x
+
+x = get_message("no", ->(str){str.length>4})
+
+puts "#{x} filtered!"
 
 
 class Array

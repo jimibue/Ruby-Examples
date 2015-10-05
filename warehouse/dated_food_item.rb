@@ -1,0 +1,3 @@
+class DatedFoodItem < FoodItem
+
+end

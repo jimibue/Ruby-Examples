@@ -1,0 +1,2 @@
+class ProcsNLambdas
+end

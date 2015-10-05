@@ -44,6 +44,24 @@ a[1,1]=[9,8, 7]  #=>[1,9,8,7,"dog","cat",9]
 a[0..3] = []#=> ["dog", "cat", 9]
 a[5..6] = 99, 98#=> ["dog", "cat", 9, nil, nil, 99, 98]
 
+
+#delete
+x = [1,2,3,4,5,6,100]
+x.delete 100
+print x#1,2,3,4,5,6
+puts
+x.delete_if{|i|i%2 ==0}
+print x #1,3,5
+puts
+
+##for loops
+
+x = [1,2,3,4,5,6]
+for i in x
+  p "#{i} !"
+end
+puts
+
 #stack FILO(push and pop)
 stack =[]
 stack.push 1

@@ -1,9 +1,11 @@
 class Ex
+  attr_reader :name, :quantity
   def initialize(name, amount)
     @name = name
     @quantity = amount
   end
 
+  #puts calls the to_s method
   def to_s
     "Name: #{@name} Amount:#{@quantity}"
   end
@@ -24,3 +26,11 @@ class Ex
     self == other
   end
 end
+
+ex1 = Ex.new('apple',1)
+ex2 = Ex.new('apple',1)
+arr = [ex1,ex2] ##uniq won't work with out hash and eql? method
+p arr.uniq
+
+puts ex1
+p ex1
